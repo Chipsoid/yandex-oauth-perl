@@ -47,6 +47,7 @@
             "LWP::UserAgent" : "0",
             "Modern::Perl" : "0",
             "Moo" : "0",
+            "Storable" : "0",
             "URI::Escape" : "0",
             "perl" : "5.008001"
          }
@@ -71,5 +72,5 @@
          "web" : "https://github.com/Chipsoid/yandex-oauth-perl"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
