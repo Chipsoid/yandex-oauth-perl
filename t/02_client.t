@@ -2,7 +2,6 @@ use strict;
 use Test::More 0.98;
 use JSON::XS;
 use HTTP::Request;
-use Data::Dumper;
 
 use_ok('Yandex::OAuth::Client');
 

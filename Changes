@@ -2,6 +2,9 @@ Revision history for Perl extension Yandex-OAuth
 
 {{$NEXT}}
 
+0.02 2015-04-30T20:31:16Z
+    - Add README.md and dependencies
+
 0.01 2015-04-30T20:14:20Z
 
     - Add Yandex::OAuth get_code and get_token
