@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "module for get access token to Yandex.API",
    "author" : [
       "Andrey Kuzmin <chipsoid@cpan.org>"
    ],
@@ -52,5 +52,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/Chipsoid/yandex-oauth-perl/issues"
+      },
+      "homepage" : "https://github.com/Chipsoid/yandex-oauth-perl",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/Chipsoid/yandex-oauth-perl.git",
+         "web" : "https://github.com/Chipsoid/yandex-oauth-perl"
+      }
+   },
    "version" : "0.01"
 }
