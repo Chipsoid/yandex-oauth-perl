@@ -1,0 +1,7 @@
+Revision history for Perl extension Yandex-OAuth
+
+{{$NEXT}}
+
+    - Add Yandex::OAuth get_code and get_token
+    - Add Yandex::OAuth::Client - base class for APIs
+
