@@ -2,6 +2,9 @@ Revision history for Perl extension Yandex-OAuth
 
 {{$NEXT}}
 
+0.05 2015-05-01T09:42:51Z
+    - fix tests and add more info to POD
+
 0.04 2015-05-01T07:36:14Z
     - changes test for hash structure
 

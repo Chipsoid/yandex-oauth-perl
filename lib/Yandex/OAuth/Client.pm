@@ -21,6 +21,8 @@ Yandex::OAuth::Client - base class for any Yandex.API modules
 Yandex::OAuth::Client is base class for any Yandex.API modules
 Contains get, post, put, delete methods for queries to any APIs Yandex.
 
+Looking for contributors for this and other Yandex.APIs
+
 =cut
 
 package Yandex::OAuth::Client;
