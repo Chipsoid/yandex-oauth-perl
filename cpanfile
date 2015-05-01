@@ -11,5 +11,6 @@ on 'test' => sub {
     requires 'Test::More', '0.98';
     requires 'JSON::XS', 0;
     requires 'HTTP::Request', 0;
+    requires 'Test::Differences', 0;
 };
 

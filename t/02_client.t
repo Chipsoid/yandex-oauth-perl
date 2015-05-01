@@ -2,6 +2,7 @@ use strict;
 use Test::More 0.98;
 use JSON::XS;
 use HTTP::Request;
+use Test::Differences;
 
 use_ok('Yandex::OAuth::Client');
 
@@ -28,7 +29,7 @@ is( $req->header('content-length'), 30, 'prepare_request length');
 is( $req->content, '{"param2":2,"param1":"value1"}', 'prepare_request body');
 
 my $answer = '{"param2":2,"param1":"value1"}';
-is_deeply($client->parse_response($answer), JSON::XS::decode_json($answer), 'parse_response');
+eq_or_diff($client->parse_response($answer), JSON::XS::decode_json($answer), 'parse_response');
 
 $answer = '';
 is( $client->parse_response($answer), undef, 'parse_response');

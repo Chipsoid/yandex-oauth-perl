@@ -38,7 +38,7 @@ use LWP::UserAgent;
 
 use Moo;
 
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 
 has 'ua' => (
     is => 'ro',
