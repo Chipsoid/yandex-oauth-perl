@@ -23,7 +23,7 @@ my $oauth = Yandex::OAuth->new(
         demo          => $answer,
     );
 
-is_deeply( $oauth->get_token(), JSON::XS::decode_json($answer), 'get_token' );
+is_deeply( $oauth->get_token(), JSON::XS->new->decode($answer), 'get_token' );
 
 
 
