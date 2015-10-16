@@ -25,8 +25,9 @@ is( $req->header('authorization'), 'Bearer ************', 'prepare_request auth'
 
 $client->prepare_request($req, { param1 => 'value1', param2 => 2});
 
+my $content = JSON::XS::decode_json( '{"param2":2,"param1":"value1"}' );
 is( $req->header('content-length'), 30, 'prepare_request length');
-is_deeply( $req->content, '{"param2":2,"param1":"value1"}', 'prepare_request body');
+is_deeply( JSON::XS::decode_json( $req->content ) , $content , 'prepare_request body');
 
 my $answer = '{"param2":2,"param1":"value1"}';
 eq_or_diff($client->parse_response($answer), JSON::XS::decode_json($answer), 'parse_response');
