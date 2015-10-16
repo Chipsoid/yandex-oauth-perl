@@ -73,5 +73,9 @@
          "web" : "https://github.com/Chipsoid/yandex-oauth-perl"
       }
    },
-   "version" : "0.06"
+   "version" : "0.07",
+   "x_contributors" : [
+      "Zen_nudist <onepis2word@gmail.com>",
+      "Andrey <Chipsoid@users.noreply.github.com>"
+   ]
 }
