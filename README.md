@@ -17,6 +17,9 @@ Yandex::OAuth - module for get access token to Yandex.API
     # return JSON with access_token
     say Dumper $oauth->get_token( code => 3557461 );
 
+    # return JSON with access_token
+    say Dumper $oauth->refresh_token( refresh_token => 3557461 );
+
 # DESCRIPTION
 
 Yandex::OAuth is a module for get access token for Yandex.API
@@ -35,6 +38,13 @@ See more at https://tech.yandex.ru/oauth/doc/dg/concepts/ya-oauth-intro-docpage/
     return a json with access\_token or error if code has expired
 
         $oauth->get_token( code => XXXXXX );
+
+- **refresh\_token()**
+
+    return a json with access\_token or error if refresh_token has alredy been used
+
+        $oauth->refresh_token( refresh_token => XXXXXX );
+
 
 # LICENSE
 
